@@ -28,7 +28,7 @@ client.on('message', msg => {
     msg.channel.sendMessage('fbebsiping,fbebsibot')
   }
   
-  var args = message.content.substring(prefix.lenght).split(" ");
+  var args = msg.content.substring(prefix.lenght).split(" ");
   
   switch (args[0].toLowerCase()) {
   
@@ -42,13 +42,13 @@ client.on('message', msg => {
       .setColor(0x00FFFF)
       .setFooter("This message pretty cool")
       .setThumbnail(msg.author.avatarURL)
- message.channel.sendEmbed(embed);
+ msg.channel.sendEmbed(embed);
  break;
   case "noticeme":
-     message.channel.sendMessage(message.author.ToString() + "sdasdasdadsaasd")
+     msg.channel.sendMessage(msg.author.ToString() + "sdasdasdadsaasd")
  break;
   default:
-     message.channel.sendMessage("Invalid Command");
+     msg.channel.sendMessage("Invalid Command");
 }
       
  
