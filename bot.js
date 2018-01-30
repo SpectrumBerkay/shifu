@@ -44,14 +44,7 @@ client.on('message', msg => {
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
  break;
-  case "noticeme":
-     msg.channel.sendMessage(msg.author.ToString() + "sdasdasdadsaasd")
- break;
-  default:
-     msg.channel.sendMessage("Invalid Command");
-}
-      
- 
+
 });
 
 client.login(process.env.BOT_TOKEN);
