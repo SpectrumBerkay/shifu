@@ -35,13 +35,8 @@ client.on('message', msg => {
   
   case "embed":
       var embed = new Discord.RichEmbed()
-      .addField("Türkcan", "Stache!", true)
-      .addField("Berkay", "Spectrum!", true)
-      .addField("Berat", "Epos!", true)
-      .addField("Engin", "TylerAbi")
-      .addField("Caner", "Caer")
-      .addField("yay", "yay", true)
-      .addField("yay2", "yay2", true)
+      .addField("Team DOJO", "Designed by", true)
+      .addField("Hoşgeldiniz", "Spectrum!", true)
       .setColor(0x00FFFF)
       .setFooter("Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
