@@ -27,7 +27,26 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'bot komutları') {
     msg.channel.sendMessage('fbebsiping,fbebsibot')
   }
-  
+  case "embed":
+      var embed = new Discord.Richembed()
+      .addField("Test Title", "Test Description", true)
+      .addField("Test Title2", "Test Description2", true)
+      .addField("Test Title3", "Test Description3", true)
+      .addField("Test Title4", "Test Description4")
+      .addField("Test Title5", "Test Description5")
+      .setColor(0x00FFFF)
+      .setFooter("This message pretty cool")
+      .setThumbnail(msg.author.avatarURL)
+ message.channel.sendEmbed(embed);
+ break;
+  case "noticeme":
+     message.channel.sendMessage(message.author.ToString() + "sdasdasdadsaasd")
+ break;
+  default:
+     message.channel.sendMessage("Invalid Command");
+}
+      
+ 
 });
 
 client.login(process.env.BOT_TOKEN);
