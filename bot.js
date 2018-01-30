@@ -10,24 +10,6 @@ client.on('ready', () => {
 
   
 client.on('message', msg => {
- if (msg.content.toLowerCase() === prefix + 'ping') {
-    msg.reply('Pong! **' + client.ping + '** ms');
-  }
- if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm Selam!')
-  }
-  if (msg.content.toLowerCase() === 'merhaba') {
-    msg.reply('Aleyküm Selam!')
-  }
-  if (msg.content.toLowerCase() === 'fotoğrafım ne') {
-    msg.reply(msg.author.avatarURL)
-  }
-  if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.reply('Aleyküm Selam!')
-  }
-  if (msg.content.toLowerCase() === 'bot komutları') {
-    msg.channel.sendMessage('fbebsiping,fbebsibot')
-  }
   
   var args = msg.content.substring(prefix.lenght).split(" ");
   
