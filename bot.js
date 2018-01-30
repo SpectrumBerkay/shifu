@@ -4,6 +4,8 @@ const PREFIX = "fbebsi"
 
 var bot = new Discord.Client();
 
+var prefix = ("");
+
 bot.on("ready", function() {
 console.log("Ready")
 });
