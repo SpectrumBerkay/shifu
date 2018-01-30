@@ -27,6 +27,11 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'bot komutları') {
     msg.channel.sendMessage('fbebsiping,fbebsibot')
   }
+  
+  var args = message.content.substring(prefix.lenght).split(" ");
+  
+  switch (args[0].toLowerCase()) {
+  
   case "embed":
       var embed = new Discord.Richembed()
       .addField("Test Title", "Test Description", true)
