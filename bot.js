@@ -43,7 +43,7 @@ client.on('message', msg => {
       .addField("yay", "yay", true)
       .addField("yay2", "yay2", true)
       .setColor(0x00FFFF)
-      .setFooter("This message pretty cool")
+      .setFooter("Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
  break;
