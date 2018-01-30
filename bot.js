@@ -35,11 +35,13 @@ client.on('message', msg => {
   
   case "embed":
       var embed = new Discord.RichEmbed()
-      .addField("Test Title", "Test Description", true)
-      .addField("Test Title2", "Test Description2", true)
-      .addField("Test Title3", "Test Description3", true)
-      .addField("Test Title4", "Test Description4")
-      .addField("Test Title5", "Test Description5")
+      .addField("Türkcan", "Stache!", true)
+      .addField("Berkay", "Spectrum!", true)
+      .addField("Berat", "Epos!", true)
+      .addField("Engin", "TylerAbi")
+      .addField("Caner", "Caer")
+      .addField("yay", "yay", true)
+      .addField("yay2", "yay2", true)
       .setColor(0x00FFFF)
       .setFooter("This message pretty cool")
       .setThumbnail(msg.author.avatarURL)
