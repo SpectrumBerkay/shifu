@@ -45,6 +45,4 @@ client.on('message', msg => {
  msg.channel.sendEmbed(embed);
  break;
 
-});
-
 client.login(process.env.BOT_TOKEN);
