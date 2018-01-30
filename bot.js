@@ -27,5 +27,5 @@ break;
 
 });
 
-bot.login(TOKEN);
+client.login(process.env.BOT_TOKEN);
 
