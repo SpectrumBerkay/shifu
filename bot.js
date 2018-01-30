@@ -33,7 +33,7 @@ client.on('message', msg => {
   switch (args[0].toLowerCase()) {
   
   case "embed":
-      var embed = new Discord.Richembed()
+      var embed = new Discord.RichEmbed()
       .addField("Test Title", "Test Description", true)
       .addField("Test Title2", "Test Description2", true)
       .addField("Test Title3", "Test Description3", true)
