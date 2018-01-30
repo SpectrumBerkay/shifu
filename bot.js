@@ -1,10 +1,8 @@
 const Discord = require("discord.js");
 
-const PREFIX = "fbebsi"
-
 var bot = new Discord.Client();
 
-var prefix = ("");
+var PREFIX = ("fbebsi");
 
 bot.on("ready", function() {
 console.log("Ready")
