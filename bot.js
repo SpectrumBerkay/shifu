@@ -6,7 +6,7 @@ var prefix = ("fbebsi");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-});
+  
 
 client.on('message', msg => {
  if (msg.content.toLowerCase() === prefix + 'ping') {
@@ -45,4 +45,6 @@ client.on('message', msg => {
  msg.channel.sendEmbed(embed);
  break;
 
+      
+      
 client.login(process.env.BOT_TOKEN);
