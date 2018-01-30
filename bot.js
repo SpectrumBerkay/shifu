@@ -1,30 +1,33 @@
+
 const Discord = require("discord.js");
+const client = new Discord.Client();
 
-var bot = new Discord.Client();
+var prefix = ("fbebsi");
 
-var PREFIX = ("fbebsi");
-
-bot.on("ready", function() {
-console.log("Ready")
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-bot.on("message", function(message) {
-if (message.author.equals(bot.user)) return;
-
-if (message.content == "hello")
-message.channel.sendMessage("Hi, there!");
-
-if (!message.content.startWith(PREFIX)) return;
-
-var args = message.content.substring(PREFIX.lenght).split(" ");
-
-switch (args[0]) {
-case "ping":
-message.channel.sendMessage("Pong!");
-break;
-}
-
+client.on('message', msg => {
+ if (msg.content.toLowerCase() === prefix + 'ping') {
+    msg.reply('Pong! **' + client.ping + '** ms');
+  }
+ if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('Aleyküm Selam!')
+  }
+  if (msg.content.toLowerCase() === 'merhaba') {
+    msg.reply('Aleyküm Selam!')
+  }
+  if (msg.content.toLowerCase() === 'fotoğrafım ne') {
+    msg.reply(msg.author.avatarURL)
+  }
+  if (msg.content.toLowerCase() === 'selamün aleyküm') {
+    msg.reply('Aleyküm Selam!')
+  }
+  if (msg.content.toLowerCase() === 'bot komutları') {
+    msg.channel.sendMessage('fbebsiping,fbebsibot')
+  }
+  
 });
 
 client.login(process.env.BOT_TOKEN);
-
