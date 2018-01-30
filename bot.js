@@ -37,7 +37,7 @@ client.on('message', msg => {
       var embed = new Discord.RichEmbed()
       .addField("Team DOJO", "Designed by", true)
       .addField("Hoşgeldiniz", "Spectrum!", true)
-      .setColor(0x00FFFF)
+      .setColor(0xFFFFFF)
       .setFooter("Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
