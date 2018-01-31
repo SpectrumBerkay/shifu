@@ -17,8 +17,8 @@ client.on('message', msg => {
   
   case "userinfo":
       var embed = new Discord.RichEmbed()
-      .setAuthor(msg.author.username)
-      .setDescription("Kullanıcı Bilgileri!")
+      .setAuthor("Kullanıcı Bilgileri!")
+      .setDescription("")
       .setColor(0xFFFFFF)
       .addField("Tam Ad", msg.author.username)
       .addField("ID", msg.author.id)
