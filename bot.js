@@ -19,7 +19,7 @@ client.on('message', msg => {
       var embed = new Discord.RichEmbed()
       .setAuthor("Kullanıcı Bilgileri!")
       .setDescription("")
-      .setColor(0x00FFFF)
+      .setColor(0x00FF00)
       .setThumbnail(msg.author.avatarURL)
       .addField("Tam Ad", msg.author.username)
       .addField("ID", msg.author.id)
