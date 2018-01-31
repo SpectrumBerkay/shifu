@@ -20,7 +20,7 @@ client.on('message', msg => {
       .setAuthor(msg.author.username)
       .setDescription("This is User Info!")
       .setColor(0xFFFFFF)
-      .setTitle("Created At", msg.author.createdAt);
+      .fields("Created At", msg.author.createdAt);
       
  msg.channel.sendEmbed(embed);
  break;
