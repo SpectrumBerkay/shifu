@@ -19,7 +19,7 @@ client.on('message', msg => {
       var embed = new Discord.RichEmbed()
       .setAuthor(msg.author.username)
       .setColor(0xFFFFFF)
-      .setFooter("Spectrum! ©")
+      .setFooter("Made by Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
  break;
