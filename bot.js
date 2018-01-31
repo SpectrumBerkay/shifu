@@ -19,8 +19,8 @@ client.on('message', msg => {
       var embed = new Discord.RichEmbed()
       .setAuthor("Kullanıcı Bilgileri!")
       .setDescription("")
-      .setColor("0x00FF00")
-      .setImage(msg.author.avatar)
+      .setColor(0x00FFFF)
+      .setImage(msg.author.avatarURL)
       .addField("Tam Ad", msg.author.username)
       .addField("ID", msg.author.id)
       .addField("Hesabı Ne zaman Oluşturduğu", msg.author.createdAt);
