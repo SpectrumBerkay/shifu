@@ -15,7 +15,7 @@ client.on('message', msg => {
   
   switch (args[0].toLowerCase()) {
   
-  case "userinfo":
+  case "!userinfo":
       var embed = new Discord.RichEmbed()
       .setAuthor("Kullanıcı Bilgileri!")
       .setDescription("")
