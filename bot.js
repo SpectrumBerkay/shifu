@@ -22,8 +22,7 @@ client.on('message', msg => {
       .setColor(0xFFFFFF)
       .setField("Full Username", 'msg.author.discriminator')
       .setField("ID", 'msg.author.id')
-      .setField("Created At", 'msg.author.createdAt');
-      .setFooter("Made by Spectrum! ©")
+      .setField("Created At", 'msg.author.createdAt')
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
  break;
