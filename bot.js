@@ -21,7 +21,7 @@ client.on('message', msg => {
       .setDescription("This is User Info!")
       .setColor(0xFFFFFF)
       .addField("Full Username", '${message.author.username}#${message.author.descriminator}')
-      .addField("ID", message.author.id)
+      .addField("ID", msg.author.id)
       .addField("Created At", msg.author.createdAt);
       
  msg.channel.sendEmbed(embed);
