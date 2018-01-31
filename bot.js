@@ -18,7 +18,11 @@ client.on('message', msg => {
   case "embed":
       var embed = new Discord.RichEmbed()
       .setAuthor(msg.author.username)
+      .setDescription("This is User Info!")
       .setColor(0xFFFFFF)
+      .setField("Full Username", 'msg.author.username', 'msg.author.discriminator')
+      .setField("ID", msg.author.id)
+      .setField("Created At", msg.author.createdAt);
       .setFooter("Made by Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
