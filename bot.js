@@ -20,7 +20,7 @@ client.on('message', msg => {
       .setAuthor(msg.author.username)
       .setDescription("Kullanıcı Bilgileri!")
       .setColor(0xFFFFFF)
-      .addField("Tam Ad", msg.author.descriminator)
+      .addField("Tam Ad", msg.author.username)
       .addField("ID", msg.author.id)
       .addField("Hesabı Ne zaman Oluşturduğu", msg.author.createdAt);
       
