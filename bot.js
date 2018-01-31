@@ -20,8 +20,7 @@ client.on('message', msg => {
       .setAuthor(msg.author.username)
       .setDescription("This is User Info!")
       .setColor(0xFFFFFF)
-      .setField("ID", msg.author.id)
-      .setField("Created At", msg.author.createdAt)
+      
  msg.channel.sendEmbed(embed);
  break;
   }
