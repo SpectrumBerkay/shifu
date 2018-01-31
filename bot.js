@@ -18,7 +18,6 @@ client.on('message', msg => {
   case "embed":
       var embed = new Discord.RichEmbed()
       .setAuthor(msg.author.username)
-      .addField("Hoşgeldiniz", "TeamDojo", true)
       .setColor(0xFFFFFF)
       .setFooter("Spectrum! ©")
       .setThumbnail(msg.author.avatarURL)
