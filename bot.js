@@ -15,14 +15,14 @@ client.on('message', msg => {
   
   switch (args[0].toLowerCase()) {
   
-  case "embed":
+  case "userinfo":
       var embed = new Discord.RichEmbed()
       .setAuthor(msg.author.username)
-      .setDescription("This is User Info!")
+      .setDescription("Kullanıcı Bilgileri!")
       .setColor(0xFFFFFF)
-      .addField("Full Username", '${message.author.username}#${message.author.descriminator}')
+      .addField("Tam Ad", '${msg.author.username}#${msg.author.descriminator}')
       .addField("ID", msg.author.id)
-      .addField("Created At", msg.author.createdAt);
+      .addField("Hesabı Ne zaman Oluşturduğu", msg.author.createdAt);
       
  msg.channel.sendEmbed(embed);
  break;
